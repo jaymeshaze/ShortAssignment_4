@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Question One</title>
     </h:head>
@@ -10,8 +11,12 @@
         <br></br>
         <br></br>
             <h:form>
-                <h:commandButton action="#{DMBean.setQuestionOneInput(1)}#{DMBean.processOne}" value="Yes"/>
-                <h:commandButton action="#{DMBean.setQuestionOneInput(2)}#{DMBean.processOne}" value="No"/>
+                <h:selectOneListbox value="#{DMBean.questionOneInput}">
+                    <f:selectItem itemValue="1" itemLabel="Yes" />
+                    <f:selectItem itemValue="2" itemLabel="No" />	   							
+                </h:selectOneListbox>	
+                <br></br><br></br>
+                <h:commandButton action="#{DMBean.processOne()}" value="Next"/>
             </h:form>
     </h:body>
 </html>
