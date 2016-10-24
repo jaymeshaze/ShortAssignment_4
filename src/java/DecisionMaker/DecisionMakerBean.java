@@ -44,132 +44,132 @@ public class DecisionMakerBean implements Serializable{
     }
     
     public String processTwo(){
-        if(questionOneInput == 1)
+        if(questionTwoInput == 1)
             return "QuestionFive";
-        else if(questionOneInput == 2)
+        else if(questionTwoInput == 2)
             return "QuestionThree";
         else
             return "";
     }
     
     public String processThree(){
-        if(questionOneInput == 1)
+        if(questionThreeInput == 1)
             return "QuestionFour";
-        else if(questionOneInput == 2)
+        else if(questionThreeInput == 2)
             return "SavingsAccount";
         else
             return "";
     }
     
     public String processFour(){
-        if(questionOneInput == 1)
+        if(questionFourInput == 1)
             return "Jetski";
-        else if(questionOneInput == 2)
+        else if(questionFourInput == 2)
             return "Nintendo64";
         else
             return "";
     }
     
     public String processFive(){
-        if(questionOneInput == 1)
+        if(questionFiveInput == 1)
             return "MotivationalPicture";
-        else if(questionOneInput == 2)
+        else if(questionFiveInput == 2)
             return "QuestionSix";
         else
             return "";
     }
     
     public String processSix(){
-        if(questionOneInput == 1)
+        if(questionSixInput == 1)
             return "OfficeChair";
-        else if(questionOneInput == 2)
+        else if(questionSixInput == 2)
             return "CandyBowl";
         else
             return "";
     }
     
     public String processSeven(){
-        if(questionOneInput == 1)
+        if(questionSevenInput == 1)
             return "QuestionEight";
-        else if(questionOneInput == 2)
+        else if(questionSevenInput == 2)
             return "FlowerPot";
         else
             return "";
     }
     
     public String processEight(){
-        if(questionOneInput == 1)
+        if(questionEightInput == 1)
             return "PotSet";
-        else if(questionOneInput == 2)
+        else if(questionEightInput == 2)
             return "QuestionNine";
         else
             return "";
     }
     
     public String processNine(){
-        if(questionOneInput == 1)
+        if(questionNineInput == 1)
             return "QuestionTen";
-        else if(questionOneInput == 2)
+        else if(questionNineInput == 2)
             return "QuestionEleven";
         else
             return "";
     }
     
     public String processTen(){
-        if(questionOneInput == 1)
+        if(questionTenInput == 1)
             return "AlarmClock";
-        else if(questionOneInput == 2)
+        else if(questionTenInput == 2)
             return "Comforter";
         else
             return "";
     }
     
     public String processEleven(){
-        if(questionOneInput == 1)
+        if(questionElevenInput == 1)
             return "Printer";
-        else if(questionOneInput == 2)
+        else if(questionElevenInput == 2)
             return "QuestionTwelve";
         else
             return "";
     }
     
     public String processTwelve(){
-        if(questionOneInput == 1)
+        if(questionTwelveInput == 1)
             return "QuestionThirteen";
-        else if(questionOneInput == 2)
+        else if(questionTwelveInput == 2)
             return "QuestionFourteen";
         else
             return "";
     }
     
     public String processThirteen(){
-        if(questionOneInput == 1)
+        if(questionThirteenInput == 1)
             return "DecorativeTowels";
-        else if(questionOneInput == 2)
+        else if(questionThirteenInput == 2)
             return "ScentedCandle";
         else
             return "";
     }
     
     public String processFourteen(){
-        if(questionOneInput == 1)
+        if(questionFourteenInput == 1)
             return "QuestionFifteen";
-        else if(questionOneInput == 2)
+        else if(questionFourteenInput == 2)
             return "LRPicture";
         else
             return "";
     }
     
     public String processFifteen(){
-        if(questionOneInput == 1)
+        if(questionFifteenInput == 1)
             return "ChinaSet";
-        else if(questionOneInput == 2)
+        else if(questionFifteenInput == 2)
             return "PaperPlates";
         else
             return "";
     }
     
-    public void Reset(){
+    public String Reset(){
         this.questionOneInput = 0;
         this.questionTwoInput = 0;
         this.questionThreeInput = 0;
@@ -185,6 +185,8 @@ public class DecisionMakerBean implements Serializable{
         this.questionThirteenInput = 0;
         this.questionFourteenInput = 0;
         this.questionFifteenInput = 0;
+        
+        return "index";
     }
 
     //Getters and Setters
